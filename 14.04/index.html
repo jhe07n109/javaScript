@@ -10,7 +10,7 @@
 <body>
     
     <label for="Quantidade">Quantidade:</label>
-    <input type="text" id="Quantidade" >
+    <input type="number" min="0" max="100" id="Quantidade">
 
     <label for="produto">Produto:</label>
 <select id="produto">
@@ -25,5 +25,6 @@
    
     <button onclick="Calcularpreco()">Calcular valor total</button>
     <div id="RESULTADO"></div>
+    <script src="javascript.js"></script>
 </body>
 </html>

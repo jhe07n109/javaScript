@@ -1,22 +1,23 @@
-const precos = {
-    prego: 0.5,
-    martelo: 25,
-    furadeira: 150,
-    arame: 10
-  };
+const precos={//dicionario
+  "Martelo":19.90,
+  "prego":10.90,
+  "furadeira":119.90,
+  "arame":59.90,
+};
 
-  function calcularPreco() {
-    const produto = document.getElementById("produto").value;
-    const quantidade = parseInt(document.getElementById("quantidade").value);
-    const resultado = document.getElementById("resultado");
+ const estoque={
+  "Martelo":100,
+  "prego":4,
+  "furadeira":6,
+  "arame":1000
+ }
 
-    if (!produto || isNaN(quantidade) || quantidade <= 0) {
-      resultado.textContent = "Preencha os campos corretamente.";
-      return;
-    }
+let qtd = document.getElementById("Quantidade").value;
 
-    const precoUnitario = precos[produto];
-    const total = precoUnitario * quantidade;
+console.log(qtd);
 
-    resultado.textContent = Preço total: R$ ${total.toFixed(2)};
+function Calcularpreco(){
+  let qtd = document.getElementById("Quantidade").value;
+  let escolha = document.getElementById("Produto").value;
+  let valor
 }
